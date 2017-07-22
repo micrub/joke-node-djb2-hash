@@ -4,7 +4,8 @@
   "main": "src/index.js",
   "license": "MIT",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha --compilers js:babel-register"
+    "test": "./node_modules/.bin/mocha --compilers js:babel-register",
+    "build": "./node_modules/.bin/webpack"
   },
   "dependencies": {
     "babel-runtime": "^6.23.0",
