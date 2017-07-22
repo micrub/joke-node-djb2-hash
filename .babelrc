@@ -4,8 +4,9 @@
             "env",
             {
                 "targets": {
-                    "node": true
-                }
+                    "node": "current"
+                },
+                "debug": true
             }
         ]
     ]
