@@ -3,11 +3,18 @@
         [
             "env",
             {
-                "targets": {
+                "debug": true,
+                "loose": false,
+                "modules": "commonjs",
+                "spec": false,
+                "tragets": {
                     "node": "current"
                 },
-                "debug": true
+                "useBuiltIns": false
             }
         ]
+    ],
+    "plugins": [
+        "transform-runtime"
     ]
 }
