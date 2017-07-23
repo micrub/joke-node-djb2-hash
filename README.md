@@ -27,6 +27,7 @@ Basic djb2 non-cypto hash function build with Babel and Webpack.
 ## Reference
 
 http://www.cse.yorku.ca/~oz/hash.html
+https://github.com/contra/djb2
 
 # Getting started
 
@@ -45,3 +46,11 @@ http://www.cse.yorku.ca/~oz/hash.html
 1. Inspect name and version in `package.json`, edit if necessary.
 2. Run `npm run build`
 3. Output will be placed in `dist/` directory, which can be published as NPM module.
+
+# Results
+
+## #1
+
+* index.js size 614
+* bundle size 4056
+* factor 6.6
