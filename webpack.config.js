@@ -10,8 +10,13 @@ const path = require('path');
      module: {
          loaders: [{
              test: /\.js$/,
-             exclude: /node_modules/,
-             loader: 'babel-loader'
+             exclude: /(node_modules|bower_components)/,
+             loader: 'babel-loader',
+             options: {
+               cacheDirectory: true,
+               presets : ["env"],
+               plugins : [require("babel-plugin-transform-runtime")]
+             }
          }]
      }
  }
