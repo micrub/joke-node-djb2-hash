@@ -10,7 +10,7 @@ const path = require('path');
      module: {
          loaders: [{
              test: /\.js$/,
-             exclude: /(node_modules|bower_components)/,
+             exclude: /(node_modules|bower_components|resources)/,
              loader: 'babel-loader',
              options: {
                cacheDirectory: true,
