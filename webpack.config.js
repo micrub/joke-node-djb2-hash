@@ -2,7 +2,11 @@ const OUT_DIR = 'dist';
 const path = require('path');
 let CopyWebpackPlugin = require('copy-webpack-plugin');
 
-const copyOptions = [{from : "resources/assets/"}];
+const copyOptions = [
+  {from : "resources/assets/"},
+  {from: "package.json"},
+  {from: "yarn.lock"},
+  {from: "README.md"}];
 
  module.exports = {
      entry: './src/index.js',
