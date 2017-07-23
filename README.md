@@ -1,6 +1,6 @@
-# Babel lib kit - starter kit
+# Babel lib kit based - djb2 npm **joke** module
 
-Starter kit using based on `yarn`, `babel-presets-env` and `Webpack`.
+Basic djb2 non-cypto hash function build with Babel and Webpack.
 
 # Getting started
 
