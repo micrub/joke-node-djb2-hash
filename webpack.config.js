@@ -12,7 +12,7 @@ const copyOptions = [
      entry: './src/index.js',
      output: {
          path: path.resolve(__dirname, OUT_DIR),
-         filename: 'app.bundle.js',
+         filename: 'index.js',
      },
      plugins: [
        new CopyWebpackPlugin(copyOptions),

@@ -1,7 +1,7 @@
 {
   "name": "babel-lib-kit",
   "version": "0.0.0",
-  "main": "src/index.js",
+  "main": "index.js",
   "license": "MIT",
   "scripts": {
     "test": "./node_modules/.bin/mocha --compilers js:babel-register",
