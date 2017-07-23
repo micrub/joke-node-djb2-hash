@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "main": "index.js",
   "private": true,
+  "author": "Michael Rubanov <mrubanov@gmail.com>",
   "license": "MIT",
   "scripts": {
     "test": "./node_modules/.bin/mocha --compilers js:babel-register",
