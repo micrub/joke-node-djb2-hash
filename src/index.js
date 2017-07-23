@@ -1,23 +1,21 @@
 /* jshint esnext:true */
 
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
-const ULONG = Uint32Array;
-const MAGIC = 33;
-const START_HASH_VALUE = 5381;
+let START_HASH_VALUE = 5381;
 
-// returns ULONG
+function reduceToHash(array) {
+  return array.reduce((prev, curr) => {
+    return ((prev << 5) + prev) + curr;
+  }, START_HASH_VALUE);
+}
+
 function djb2(input) {
-  if (typeof input === 'string' && input.length) {
-    let hash = START_HASH_VALUE;
-    for (var i = 0, l = input.length; i < l; i ++) {
-      var v = input[i];
-      hash = ( (hash << 5) + hash ) + v;
-    }
-    return hash & 0xFFFFFFFF;
+  if (input && input.constructor && input.constructor.name === 'Array'  && input.length) {
+    return reduceToHash(input);
+  } else if(input && typeof input === 'string'  && input.length){
+    return reduceToHash( input.split('').map((str) => { return str.charCodeAt(0) }) );
   } else {
-    return new Error('Empty input')
+    return new Error('Empty input.' + JSON.stringify(input))
   }
-
 }
 let Core = { djb2 };
 
