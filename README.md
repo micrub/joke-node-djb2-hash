@@ -1,5 +1,8 @@
 # Babel lib kit based - djb2 npm **joke** module
 
+**NOT FUNCTIONAL**
+======
+
 Basic djb2 non-cypto hash function build with Babel and Webpack.
 
 ## Citation
