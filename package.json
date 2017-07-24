@@ -1,5 +1,5 @@
 {
-  "name": "@michaelr/joke-node-djb2-hash",
+  "name": "@micrub/joke-node-djb2-hash",
   "description": "Minimal hash function npm module constructed with Babel and Webpack weasels",
   "version": "0.0.3",
   "main": "index.js",
