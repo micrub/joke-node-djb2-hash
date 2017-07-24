@@ -1,7 +1,7 @@
 {
   "name": "joke-node-djb2-hash",
   "description": "Minimal hash function npm module constructed with Babel and Webpack weasels",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "index.js",
   "private": true,
   "author": "Michael Rubanov <mrubanov@gmail.com>",
